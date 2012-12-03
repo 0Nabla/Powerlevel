@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Calcola la capacità rimanente della batteria"
-
 
 if [ -d "$BAT0" ]
 then
@@ -14,12 +12,12 @@ else
 fi
 
 
-x=${str:25:4}						       # Sottostringa di str
+x=${str:25:4}						       
 y=${full_capacity:25:4}
 
 a=100							
 full=($y * 1)
-remaining_capacity=($x * 1)				       # Da stringa a int
+remaining_capacity=($x * 1)				       
 
       
 capacity=`echo "scale=2;($a * $remaining_capacity)/$full" | bc`
@@ -34,5 +32,5 @@ then
 fi
 
 
-#echo "Remaining Capacity: " $capacity"%"
+#echo "Remaining Capacity: " $capacity"%"   #This command is superfluous.
 
