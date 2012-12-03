@@ -32,5 +32,5 @@ then
 fi
 
 
-#echo "Remaining Capacity: " $capacity"%"   #This command is superfluous.
+#echo "Remaining Capacity: " $capacity"%"   #This line is superfluous.
 
