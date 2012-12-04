@@ -27,7 +27,7 @@ let  "warning=($full*10)/100"
 if  [ "$remaining_capacity" -le  "$warning" ]
 then
 	
-	echo "Low Battery, please connect the AC."
+	echo "Low Battery (10%) , please connect the AC."
 
 fi
 
